@@ -1,0 +1,20 @@
+/** Candy store:
+Nerds (10)
+Hershey (15)
+Snickers (7)
+Kit Kat (13)
+Twix (18)
+Skittles (20)
+
+**/
+
+CREATE TABLE Candystore (id integer PRIMARY KEY,name Text, quantity Integer);
+
+INSERT into Candystore values (1,"Nerds", 10);
+INSERT into Candystore values (2, "Hershey", 15);
+INSERT into Candystore values (3, "Snikers", 7);
+INSERT into Candystore values (4, "Kit Kat", 13);
+INSERT into Candystore values (5, "Twix", 18);
+INSERT into Candystore values (6, "Skittles", 20);
+
+SELECT * FROM Candystore WHERE id <5 ORDER BY quantity;
